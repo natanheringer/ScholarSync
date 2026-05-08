@@ -39,6 +39,8 @@ Facilitar o controle de eventos educacionais com regras de negocio claras, como 
 - E2E: `cd e2e && npm install && npx playwright test`
 
 ## Integrantes
+
+Grupo 4: 
 - Natan
 - Yves
 - Hiago
