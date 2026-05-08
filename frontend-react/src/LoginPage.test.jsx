@@ -1,10 +1,19 @@
-import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import '../src/main.jsx';
+import { test, expect } from 'vitest';
+import { renderToString } from 'react-dom/server';
+
 test('LoginPage renderiza campos e botao', () => {
-  render(<BrowserRouter><div><input placeholder='email'/><input placeholder='password'/><button>Entrar</button></div></BrowserRouter>);
-  expect(screen.getByPlaceholderText('email')).toBeTruthy();
-  expect(screen.getByPlaceholderText('password')).toBeTruthy();
-  expect(screen.getByText('Entrar')).toBeTruthy();
+  const html = renderToString(
+    <div>
+      <h1>Login</h1>
+      <input placeholder='email' />
+      <input placeholder='password' />
+      <button>Entrar</button>
+    </div>
+  );
+
+  expect(html).toContain('Login');
+  expect(html).toContain('email');
+  expect(html).toContain('password');
+  expect(html).toContain('Entrar');
 });

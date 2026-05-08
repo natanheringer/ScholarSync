@@ -1,49 +1,35 @@
 # ScholarSync
 
-## Descrição do Projeto
-O ScholarSync é uma plataforma desenvolvida para auxiliar estudantes na organização da rotina acadêmica. O sistema permite o gerenciamento de tarefas, disciplinas, trabalhos e prazos, ajudando os usuários a manterem melhor controle das atividades da faculdade.
-
-O projeto foi desenvolvido com foco em praticidade, organização e facilidade de uso.
-
----
+## Descricao do projeto
+ScholarSync e uma plataforma para gestao de eventos academicos. O sistema permite autenticacao de usuarios, administracao de eventos e inscricao de participantes.
 
 ## Objetivo
-O principal objetivo do ScholarSync é facilitar o acompanhamento das atividades acadêmicas, permitindo que o estudante visualize suas tarefas e prazos em um único ambiente.
+Facilitar o controle de eventos educacionais com regras de negocio claras, como bloqueio de inscricao duplicada e validacao de lotacao.
 
----
+## Funcionalidades principais
+- Cadastro e login de usuarios
+- CRUD de eventos
+- Inscricao em eventos
+- Consulta de inscricoes do usuario
+- Bloqueio de inscricao duplicada
+- Bloqueio de inscricao em evento lotado
 
-## Funcionalidades Principais
+## Tecnologias utilizadas
+### Frontend
+- React (participante)
+- Angular (admin)
 
-- Cadastro e login de usuários
-- Cadastro de disciplinas
-- Criação de tarefas acadêmicas
-- Definição de prazos
-- Organização das atividades
-- Edição e remoção de tarefas
-- Interface simples e intuitiva
-
----
-
-## Tecnologias Utilizadas
-
-### Front-end
-- HTML
-- CSS
-- JavaScript
-
-### Back-end
-- Java
+### Backend
+- Java 17
 - Spring Boot
 
-### Banco de Dados
-- MySQL
+### Banco de dados
+- H2 (em memoria)
 
-### Ferramentas
-- Git/GitHub
-- Postman
-- Maven
-
----
+### Ferramentas de teste
+- JUnit 5 / Mockito / MockMvc
+- Vitest
+- Playwright
 
 ## Como executar
 - Backend: `cd backend-java && mvn spring-boot:run`
@@ -58,5 +44,3 @@ O principal objetivo do ScholarSync é facilitar o acompanhamento das atividades
 - Hiago
 - Thales
 - Nicolas
-
-
