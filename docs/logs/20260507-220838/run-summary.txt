@@ -1,0 +1,5 @@
+timestamp=20260507-220838
+log_dir=C:\Users\rsa_m\OneDrive\Documentos\ScholarSync\docs\logs\20260507-220838
+backend_exit=0
+frontend_exit=0
+e2e_exit=1
